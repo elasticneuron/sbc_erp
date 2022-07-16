@@ -1,1 +1,7 @@
-# sbc_erp
+## SBC ERP
+
+Surebiz Corporation App
+
+#### License
+
+MIT

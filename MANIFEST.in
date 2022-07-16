@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sbc_erp *.css
+recursive-include sbc_erp *.csv
+recursive-include sbc_erp *.html
+recursive-include sbc_erp *.ico
+recursive-include sbc_erp *.js
+recursive-include sbc_erp *.json
+recursive-include sbc_erp *.md
+recursive-include sbc_erp *.png
+recursive-include sbc_erp *.py
+recursive-include sbc_erp *.svg
+recursive-include sbc_erp *.txt
+recursive-exclude sbc_erp *.pyc
