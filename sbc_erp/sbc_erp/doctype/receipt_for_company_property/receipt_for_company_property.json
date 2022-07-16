@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-29 13:28:18.593144",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "receipt_id",
+  "receipt_date",
+  "employee_id",
+  "employee_name",
+  "department",
+  "received_items",
+  "employee_signature",
+  "employee_signature_date",
+  "supervisor_signature",
+  "supervisor_signature_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "receipt_id",
+   "fieldtype": "Data",
+   "label": "Receipt ID"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "received_items",
+   "fieldtype": "Table",
+   "label": "Received Items",
+   "options": "Property Receipt Items"
+  },
+  {
+   "fieldname": "employee_signature",
+   "fieldtype": "Signature",
+   "label": "Employee Signature"
+  },
+  {
+   "fieldname": "employee_signature_date",
+   "fieldtype": "Date",
+   "label": "Employee Signature Date"
+  },
+  {
+   "fieldname": "supervisor_signature",
+   "fieldtype": "Signature",
+   "label": "Supervisor Signature"
+  },
+  {
+   "fieldname": "supervisor_signature_date",
+   "fieldtype": "Date",
+   "label": "Supervisor Signature Date"
+  },
+  {
+   "fieldname": "receipt_date",
+   "fieldtype": "Datetime",
+   "label": "Receipt Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-06-29 13:58:45.408516",
+ "modified_by": "Administrator",
+ "module": "SBC ERP",
+ "name": "Receipt for Company Property",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

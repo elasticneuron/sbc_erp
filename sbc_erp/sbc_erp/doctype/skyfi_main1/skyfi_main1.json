@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-06-06 15:34:38.120352",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "ic",
+  "voucher",
+  "docnum",
+  "usercode",
+  "tdate",
+  "vdate",
+  "reference",
+  "controlno",
+  "remarks",
+  "term",
+  "checkno",
+  "camount",
+  "asmcode",
+  "de",
+  "creditsales",
+  "checkpayment",
+  "d1",
+  "d2",
+  "d3",
+  "void",
+  "cncode",
+  "sonumber",
+  "pctransact",
+  "fldguid",
+  "deldocnum",
+  "term2",
+  "di"
+ ],
+ "fields": [
+  {
+   "fieldname": "ic",
+   "fieldtype": "Data",
+   "label": "IC"
+  },
+  {
+   "fieldname": "voucher",
+   "fieldtype": "Data",
+   "label": "Voucher"
+  },
+  {
+   "fieldname": "docnum",
+   "fieldtype": "Data",
+   "label": "DocNum"
+  },
+  {
+   "fieldname": "usercode",
+   "fieldtype": "Data",
+   "label": "UserCode"
+  },
+  {
+   "fieldname": "tdate",
+   "fieldtype": "Data",
+   "label": "TDate"
+  },
+  {
+   "fieldname": "vdate",
+   "fieldtype": "Data",
+   "label": "VDate"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "controlno",
+   "fieldtype": "Data",
+   "label": "ControlNo"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "term",
+   "fieldtype": "Data",
+   "label": "Term"
+  },
+  {
+   "fieldname": "checkno",
+   "fieldtype": "Data",
+   "label": "CheckNo"
+  },
+  {
+   "fieldname": "camount",
+   "fieldtype": "Data",
+   "label": "CAmount"
+  },
+  {
+   "fieldname": "asmcode",
+   "fieldtype": "Data",
+   "label": "ASMCode"
+  },
+  {
+   "fieldname": "de",
+   "fieldtype": "Data",
+   "label": "DE"
+  },
+  {
+   "fieldname": "creditsales",
+   "fieldtype": "Data",
+   "label": "CreditSales"
+  },
+  {
+   "fieldname": "checkpayment",
+   "fieldtype": "Data",
+   "label": "CheckPayment"
+  },
+  {
+   "fieldname": "d1",
+   "fieldtype": "Data",
+   "label": "D1"
+  },
+  {
+   "fieldname": "d2",
+   "fieldtype": "Data",
+   "label": "D2"
+  },
+  {
+   "fieldname": "d3",
+   "fieldtype": "Data",
+   "label": "D3"
+  },
+  {
+   "fieldname": "void",
+   "fieldtype": "Data",
+   "label": "Void"
+  },
+  {
+   "fieldname": "cncode",
+   "fieldtype": "Data",
+   "label": "CNCode"
+  },
+  {
+   "fieldname": "sonumber",
+   "fieldtype": "Data",
+   "label": "SONumber"
+  },
+  {
+   "fieldname": "pctransact",
+   "fieldtype": "Data",
+   "label": "PCTransact"
+  },
+  {
+   "fieldname": "fldguid",
+   "fieldtype": "Data",
+   "label": "FldGuid"
+  },
+  {
+   "fieldname": "deldocnum",
+   "fieldtype": "Data",
+   "label": "DelDocnum"
+  },
+  {
+   "fieldname": "term2",
+   "fieldtype": "Data",
+   "label": "Term2"
+  },
+  {
+   "fieldname": "di",
+   "fieldtype": "Data",
+   "label": "DI"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "naming_series"
+  }
+ ],
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2022-06-08 13:52:38.418648",
+ "modified_by": "Administrator",
+ "module": "SBC ERP",
+ "name": "Skyfi Main1",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

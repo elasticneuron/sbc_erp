@@ -1,0 +1,22 @@
+{
+ "creation": "2022-06-21 17:33:11.089181",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{\"filter_based_on\":\"Fiscal Year\",\"fiscal_year\":\"FY2023\",\"from_date\":\"2021-06-21\",\"to_date\":\"2022-06-21\"}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "Travelled Distance",
+ "modified": "2022-06-21 17:40:37.935135",
+ "modified_by": "rinasurebiz@gmail.com",
+ "module": "Surebiz Testing Module",
+ "name": "Travels",
+ "owner": "rinasurebiz@gmail.com",
+ "report_field": "odometer",
+ "report_function": "Maximum",
+ "report_name": "Vehicle Expenses",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

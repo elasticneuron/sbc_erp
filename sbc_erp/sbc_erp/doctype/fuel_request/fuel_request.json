@@ -1,0 +1,322 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-01-27 17:58:44.376498",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "request_type",
+  "gas_station",
+  "fuel_type",
+  "price",
+  "litres",
+  "data_8",
+  "route_area",
+  "plate_no",
+  "type_of_vehicle",
+  "driver_id",
+  "driver_name",
+  "department",
+  "odometer_reading",
+  "approver_id",
+  "approver_name",
+  "signature",
+  "serial",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "FR-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "request_type",
+   "fieldtype": "Select",
+   "label": "Request Type",
+   "options": "Inbase\nOutbase"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.request_type==\"Outbase\"",
+   "fieldname": "gas_station",
+   "fieldtype": "Data",
+   "label": "Gas Station"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.request_type==\"Outbase\"",
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "Diesel\nXTRA Advanced\nXCS\nGasoline\nKerosene"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.request_type==\"Outbase\"",
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.request_type==\"Outbase\"",
+   "fieldname": "litres",
+   "fieldtype": "Float",
+   "label": "Litres"
+  },
+  {
+   "fieldname": "data_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route_area",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Route Area",
+   "options": "Iloilo City\nIloilo Province - Central\nIloilo Province - South\nIloilo Province - North\nNegros Occidental\nNegros Oriental\nCapiz\nAklan\nAntique\nGuimaras",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plate_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Plate No.",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "plate_no.type",
+   "fieldname": "type_of_vehicle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type of Vehicle"
+  },
+  {
+   "columns": 2,
+   "fieldname": "driver_id",
+   "fieldtype": "Link",
+   "label": "Driver ID",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "driver_id.employee_name",
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "driver_id.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "odometer_reading",
+   "fieldtype": "Int",
+   "label": "Odometer Reading",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approver_id",
+   "fieldtype": "Link",
+   "label": "Approver ID",
+   "options": "Employee",
+   "permlevel": 3
+  },
+  {
+   "fetch_from": "approver_id.employee_name",
+   "fieldname": "approver_name",
+   "fieldtype": "Data",
+   "label": "Approver Name",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "serial",
+   "fieldtype": "Data",
+   "label": "Reference",
+   "permlevel": 5
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Status",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fuel Request",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-26 17:53:17.261283",
+ "modified_by": "Administrator",
+ "module": "SBC ERP",
+ "name": "Fuel Request",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Transport and Logistics Admin",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Transport and Logistics Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Transport and Logistics Officer",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 2,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 3,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 4,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "route": "fuelrequestform",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "serial",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
